@@ -1,0 +1,11 @@
+<div class="container" style="width:65%">
+  <h1>Nuevo Producto</h1>
+
+  <%= render "form", product: @product %>
+
+  <br>
+
+  <div>
+    <%= link_to "Volver a los productos", products_path, class: "btn btn-primary" %>
+  </div>
+</div>

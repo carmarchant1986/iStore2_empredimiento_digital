@@ -1,0 +1,19 @@
+<div id="<%= dom_id product %>">
+
+  <div class="card" style="width: 18rem;">
+    <% if product.image.attached? %>
+   
+      <img class="card-img-top" src='<%= (url_for(product.image)) %>'>
+
+    <% end %>
+    <div class="card-body">
+      <h5 class="card-title"><%= product.nombre %></h5>
+      <p class="card-text">
+        <span style="color: red">$<%= product.precio %></span>      
+          
+        </div> 
+      </p>      
+    </div>
+  </div>
+
+</div>
